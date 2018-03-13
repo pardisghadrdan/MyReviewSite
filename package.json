@@ -1,0 +1,9 @@
+{
+    "dependencies": {
+        "less": "^3.0.1"
+    },
+    "scripts": {
+        "styles": "lessc styles.less styles.css"  
+    }
+}
+
