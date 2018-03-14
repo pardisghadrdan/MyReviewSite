@@ -1,4 +1,6 @@
-//MED Jquery
+//MED Jquery=
+let $=require("jquery");
+let movieData=require("./data");
 
 function renderMovie(data){
   $(".infosection h1").text(data.title);
@@ -25,6 +27,7 @@ $(".stars").on("click", "span", function(e){
   changeStarRating(rating);
 });
 
+console.log("hedddkdj");
 renderMovie(movieData);
 
 
