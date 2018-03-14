@@ -1,6 +1,6 @@
 //MED Jquery=
-let $=require("jquery");
-let movieData=require("./data");
+import {movieData} from "./data";
+import * as $ from "jquery";
 
 function renderMovie(data){
   $(".infosection h1").text(data.title);
