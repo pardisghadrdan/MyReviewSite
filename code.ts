@@ -1,8 +1,9 @@
 //MED Jquery=
+import { Review } from "./interfaces";
 import {movieData} from "./data";
 import * as $ from "jquery";
 
-function renderMovie(data){
+function renderMovie(data: Review){
   $(".infosection h1").text(data.title);
   $(".infosection p").text(data.description);
   $(".poster").attr("src", data.imgUrl);
@@ -21,7 +22,7 @@ function changeStarRating(rating){
 }
 
 //klicka på en stjärna
-$(".stars").on("click", "span", function(e){
+$(".stars").on("click", "span", (e) =>{
   let star = $(e.target);
   let rating = parseInt(star.attr("data-rating-id"));
   changeStarRating(rating);
@@ -29,11 +30,6 @@ $(".stars").on("click", "span", function(e){
 
 console.log("hedddkdj");
 renderMovie(movieData);
-
-
-
-
-
 
 
 

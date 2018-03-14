@@ -13,6 +13,7 @@
         "lintts": "tslint -c tslint.json '*.ts'"
     },
     "devDependencies": {
+        "@types/jquery": "^3.3.1",
         "stylelint": "^9.1.2",
         "ts-loader": "^4.0.1",
         "tslint": "^5.9.1",
